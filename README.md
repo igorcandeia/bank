@@ -48,3 +48,61 @@ If the server starts successfully, you'll see the following output:
 
 To test with postman download and import this [postman collection](https://drive.google.com/file/d/10Kz87iOOZtqSMgtyMNy3Thzbj8Mr_DEM/view?usp=sharing).
 
+## API
+
+_Add Account_
+```
+curl --location 'http://localhost:8080/accounts' \
+--header 'Content-Type: application/json' \
+--data '{
+    "accountId": "1"
+}'
+```
+
+_Get Accounts_
+```
+curl --location 'http://localhost:8080/accounts'
+```
+
+_Get Balances by Account_
+```
+curl --location 'http://localhost:8080/balances/account/1'
+```
+
+_Update Account Balance_
+```
+curl --location --request PUT 'http://localhost:8080/balances/account/1/balance/CASH/amount/5000'
+```
+
+_Add Transaction_
+```
+curl --location 'http://localhost:8080/transactions' \
+--header 'Content-Type: application/json' \
+--data '{
+	"account": "1",
+	"amount": 100.00,
+	"mcc": "invalid",
+	"merchant": "PADARIA DO ZE               SAO PAULO BR"
+}'
+```
+
+_Get Account Transactions_
+```
+curl --location 'http://localhost:8080/transactions/account/1'
+```
+
+_Add Merchant_
+```
+curl --location 'http://localhost:8080/merchants' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "IFOOD",
+    "mcc": "5812"
+}'
+```
+
+_Get Merchants_
+```
+curl --location 'http://localhost:8080/merchants'
+```
+
