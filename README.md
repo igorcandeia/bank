@@ -20,6 +20,11 @@ Here's a list of features included in this project:
 | [Postgres](https://start.ktor.io/p/postgres)                           | Adds Postgres database to your application                                         |
 | [Exposed](https://start.ktor.io/p/exposed)                             | Adds Exposed database to your application                                          |
 
+## Requirements
+
+All you need to run is:
+- Java
+- Docker
 
 ## Building & Running
 
