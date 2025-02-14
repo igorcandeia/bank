@@ -39,3 +39,7 @@ If the server starts successfully, you'll see the following output:
 2024-12-04 14:32:45.682 [DefaultDispatcher-worker-1] INFO  Application - Responding at http://127.0.0.1:8080
 ```
 
+## Testing with Postman
+
+To test with postman download and import this [postman collection](https://drive.google.com/file/d/10Kz87iOOZtqSMgtyMNy3Thzbj8Mr_DEM/view?usp=sharing).
+
