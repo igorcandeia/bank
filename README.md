@@ -13,7 +13,7 @@ Here are some useful links to get you started:
 Here's a list of features included in this project:
 
 | Name                                                                   | Description                                                                        |
-| ------------------------------------------------------------------------|------------------------------------------------------------------------------------ |
+| -----------------------------------------------------------------------|------------------------------------------------------------------------------------ |
 | [Routing](https://start.ktor.io/p/routing)                             | Provides a structured routing DSL                                                  |
 | [kotlinx.serialization](https://start.ktor.io/p/kotlinx-serialization) | Handles JSON serialization using kotlinx.serialization library                     |
 | [Content Negotiation](https://start.ktor.io/p/content-negotiation)     | Provides automatic content conversion according to Content-Type and Accept headers |
@@ -26,19 +26,16 @@ Here's a list of features included in this project:
 To build or run the project, use one of the following tasks:
 
 | Task                          | Description                                                          |
-| -------------------------------|---------------------------------------------------------------------- |
+| ------------------------------|--------------------------------------------------------------------- |
 | `./gradlew test`              | Run the tests                                                        |
 | `./gradlew build`             | Build everything                                                     |
-| `buildFatJar`                 | Build an executable JAR of the server with all dependencies included |
-| `buildImage`                  | Build the docker image to use with the fat JAR                       |
-| `publishImageToLocalRegistry` | Publish the docker image locally                                     |
-| `run`                         | Run the server                                                       |
-| `runDocker`                   | Run using the local docker image                                     |
+| `./gradlew run`               | Run the server                                                       |
+| `docker-compose up -d`        | Run PostgreSQL local                                                 |
 
 If the server starts successfully, you'll see the following output:
 
 ```
 2024-12-04 14:32:45.584 [main] INFO  Application - Application started in 0.303 seconds.
-2024-12-04 14:32:45.682 [main] INFO  Application - Responding at http://0.0.0.0:8080
+2024-12-04 14:32:45.682 [DefaultDispatcher-worker-1] INFO  Application - Responding at http://127.0.0.1:8080
 ```
 
