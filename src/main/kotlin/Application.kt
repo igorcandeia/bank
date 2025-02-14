@@ -7,9 +7,7 @@ import com.challenge.model.transaction.TransactionRepositoryImpl
 import com.challenge.plugins.configureDatabases
 import com.challenge.plugins.configureRouting
 import com.challenge.plugins.configureSerialization
-import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
-import io.ktor.server.plugins.contentnegotiation.*
 
 fun main(args: Array<String>) {
     io.ktor.server.netty.EngineMain.main(args)
